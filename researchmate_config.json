@@ -1,0 +1,68 @@
+
+{
+  "project_name": "ResearchMate AI",
+  "project_description": "AI-powered research paper assistant for students and researchers",
+  "application_type": "Full-stack Web Application",
+  "model_provider": "Google Gemini",
+  "model_name": null,
+  "system_role": "Academic Research Assistant",
+  "prompting_technique": "Few-Shot Prompting",
+  "input_fields": [
+    "Research Topic",
+    "Academic Domain",
+    "Research Objectives",
+    "Research Level"
+  ],
+  "research_sections": [
+    "Research Title",
+    "Abstract",
+    "Introduction",
+    "Research Questions",
+    "Literature Review",
+    "Research Methodology",
+    "Key Findings",
+    "Research Gaps",
+    "Limitations",
+    "Future Research Directions",
+    "Conclusion",
+    "References"
+  ],
+  "few_shot_examples": [
+    {
+      "topic": "Artificial Intelligence in Healthcare",
+      "expected_sections": [
+        "Abstract",
+        "Research Questions",
+        "Literature Review",
+        "Research Gaps",
+        "Conclusion"
+      ]
+    },
+    {
+      "topic": "Cybersecurity Challenges in Cloud Computing",
+      "expected_sections": [
+        "Abstract",
+        "Research Questions",
+        "Literature Review",
+        "Research Gaps",
+        "Conclusion"
+      ]
+    }
+  ],
+  "output_formats": [
+    "TXT",
+    "JSON"
+  ],
+  "source_verification_rules": [
+    "Do not fabricate academic papers or citations",
+    "Do not invent authors, publication dates or DOIs",
+    "Clearly identify unverified references",
+    "Provide source URLs when available"
+  ],
+  "error_handling_rules": [
+    "Validate empty research topics",
+    "Handle Gemini API errors",
+    "Display loading indicators",
+    "Validate JSON before export"
+  ]
+}
